@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background-image: url("img/bg.png");
+  background-image: url("img/flowers.png");
   background-repeat: no-repeat;
   width: 1280px;
   margin: 0 auto;
@@ -117,4 +117,14 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   color: #515076;
+}
+
+.Repaintme {
+  background-color: blue;
+  color: black;
+}
+
+
+.btn-green {
+  background-color: green !important;
 }
