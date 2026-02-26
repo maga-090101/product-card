@@ -41,7 +41,7 @@ title.addEventListener("mouseover", () => {
   console.log("Это главный заголовок страницы!");
 });
 
-// Меняю цвет
+// Меняю  свой цвет
 
 const repaintMe = document.getElementById("Repaint-me");
 repaintMe.addEventListener("click", () => {
