@@ -46,5 +46,4 @@ title.addEventListener("mouseover", () => {
 const repaintMeButton = document.getElementById("Repaint-me-button");
 repaintMeButton.addEventListener("click", () => {
   repaintMeButton.classList.toggle("btn-green");
-  repaintMeButton.classList.toggle("btn-blue");
 });
