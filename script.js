@@ -38,13 +38,12 @@ function openGoogle() {
 
 const title = document.getElementById("main-title");
 title.addEventListener("mouseover", () => {
-  console.log("Это главный заголовок страницы!");
+  console.log(title.textContent);
 });
 
-// Меняю цвет
+// Перекрась меня
 
-const repaintMe = document.getElementById("Repaint-me");
-repaintMe.addEventListener("click", () => {
-  repaintMe.classList.toggle("btn-green");
-  repaintMe.classList.toggle("btn-blue");
+const repaintMeButton = document.getElementById("Repaint-me-button");
+repaintMeButton.addEventListener("click", () => {
+  repaintMeButton.classList.toggle("btn-green");
 });
