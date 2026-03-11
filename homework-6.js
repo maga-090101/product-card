@@ -21,6 +21,7 @@ const carData = {
   color: "White",
   mileage: 15000,
   licensePlate: "ABC-123",
+  transmission: "Автомат",
 };
 
 // 5. Написать функцию которая аргументом будет принимать объект, описанный в пункте №4. Она проверяет, есть ли в объекте свойство "максимальная скорость", если нет - добавляет его и задает значение, если есть - прекращает выполнение (ничего не делает)
@@ -38,9 +39,9 @@ function addMaxSpeed(car) {
 
 function showObjectProperty(obj, property) {
   console.log(obj[property]);
-
-  showObjectProperty(car, "model");
 }
+
+ showObjectProperty(car, "model");
 
 // 7. Создать массив, который содержит названия продуктов (просто строки)
 
@@ -118,11 +119,11 @@ console.log(books);
 
 // 10. Почитать про метод массива — map. Написать функцию, которая принимает массив сущностей с задания №9. Добавляем новое свойство для объекта "isRare (это редкий)" и в зависимости от года выпуска книги (или какой-то логики, связанной с вашей сущностью), устанавливаем true или false. Что я хочу этим сказать: если книга выпущена позже 2000 года, устанавливаем true (да, это редкий), нет - false (значит это не редкий).
 
-const getRarity = (booksArray) => {
+const getMarkedRarityBooks = (booksArray) => {
   return booksArray.map((book) => ({
     ...book,
     isRare: book.year > 2000,
   }));
 };
-const updatedPotterUniverse = getRarity(potterUniverse);
+const updatedPotterUniverse = getMarkedRarityBooks(potterUniverse);
 console.log(updatedPotterUniverse);
