@@ -23,6 +23,7 @@ const carData = {
   licensePlate: "ABC-123",
   transmission: "Автомат",
 };
+car.Owner = user;
 
 // 5. Написать функцию которая аргументом будет принимать объект, описанный в пункте №4. Она проверяет, есть ли в объекте свойство "максимальная скорость", если нет - добавляет его и задает значение, если есть - прекращает выполнение (ничего не делает)
 
@@ -41,7 +42,7 @@ function showObjectProperty(obj, property) {
   console.log(obj[property]);
 }
 
- showObjectProperty(car, "model");
+showObjectProperty(car, "model");
 
 // 7. Создать массив, который содержит названия продуктов (просто строки)
 
