@@ -75,19 +75,19 @@ const validatedComments = socialComments.map((item) => {
 
 // 11. Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
 
-const byReduce = socialComments.reduce((accumulator, item) => {
+const emailsByReduce = socialComments.reduce((accumulator, item) => {
   accumulator.push(item.email);
   return accumulator;
 }, []);
 
-console.log(byReduce);
+console.log(emailsByReduce);
 
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
-const emailsToString = emailsReduce.toString();
+const emailsToString = emailsByReduce.toString();
 
 console.log(emailsToString);
 
-const byjoin = emailsReduce.join(", ");
+const byjoin = emailsByReduce.join(", ");
 
 console.log(byjoin);
