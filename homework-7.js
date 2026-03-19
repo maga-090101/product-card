@@ -2,9 +2,9 @@ import { socialComments } from "./comments.js";
 
 // 3. Создать массив чисел от 1 до 10. Отфильтровать его таким образом, что бы мы получил массив чисел, начиная с 5.
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const arrayNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const result = array.filter((number) => number >= 5);
+const result = arrayNumbers.filter((number) => number >= 5);
 
 console.log(result);
 
@@ -66,7 +66,7 @@ console.log(simplifiedComments);
 
 // 10. Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
 
-const socialComments = socialComments.map((item) => {
+const validatedComments = socialComments.map((item) => {
   return {
     ...item,
     isInvalid: item.body.length > 180,
@@ -75,19 +75,19 @@ const socialComments = socialComments.map((item) => {
 
 // 11. Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
 
-const emailsReduce = socialComments.reduce((accumulator, item) => {
+const byReduce = socialComments.reduce((accumulator, item) => {
   accumulator.push(item.email);
   return accumulator;
 }, []);
 
-console.log(emailsReduce);
+console.log(byReduce);
 
 // 12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
-const emailsStringToString = emailsReduce.toString();
+const emailsToString = emailsReduce.toString();
 
-console.log(emailsStringToString);
+console.log(emailsToString);
 
-const emailsStringjoin = emailsReduce.join(", ");
+const byjoin = emailsReduce.join(", ");
 
-console.log(emailsStringjoin);
+console.log(byjoin);
