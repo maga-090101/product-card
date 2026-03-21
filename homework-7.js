@@ -88,6 +88,6 @@ const emailsToString = emailsByReduce.toString();
 
 console.log(emailsToString);
 
-const byjoin = emailsByReduce.join(", ");
+const byJoin = emailsByReduce.join(", ");
 
-console.log(byjoin);
+console.log(byJoin);
